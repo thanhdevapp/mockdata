@@ -1,0 +1,1125 @@
+{
+  "userInfo": {
+    "timestamp": "19-02-2025 13:43:30",
+    "soaErrorCode": 0,
+    "code": 200,
+    "message": "Successful!",
+    "data": {
+      "username": "dcms.admin",
+      "realmRoles": [
+        "offline_access",
+        "default-roles-crm",
+        "uma_authorization"
+      ],
+      "clientRoles": [
+        "CONFIG_BUILDER",
+        "ADMIN"
+      ],
+      "fullName": "dcms.admin"
+    }
+  },
+  "managementAllProfile": {
+    "timestamp": "25-02-2025 10:20:29",
+    "clientMessageId": "3b7b6800-bdec-44c5-ab6c-94d65ab156f6",
+    "transactionId": "fa12e4e1-b0d5-43bc-ace2-ec0fdb7b4c50",
+    "soaErrorCode": 0,
+    "path": "/v1/field/static",
+    "code": 200,
+    "message": "Successful!",
+    "data": {
+      "createdBy": "dcms.admin",
+      "createdAt": "2025-01-08 15:54:32",
+      "updatedBy": "dcms.admin",
+      "updatedAt": "2025-01-08 15:54:32",
+      "id": 619,
+      "component": "management-all-profile",
+      "dataVersion": 77,
+      "data": {
+        "config": [
+          {
+            "id": "content",
+            "type": "_container",
+            "items": [
+              "table-1"
+            ],
+            "classes": "flex-column panel"
+          },
+          {
+            "id": "button-list",
+            "type": "_container",
+            "items": [],
+            "classes": "d-flex"
+          },
+          {
+            "id": "searchAdvanced",
+            "type": "_container",
+            "items": [
+              "formControl-2",
+              "formControl-9",
+              "formControl-1",
+              "formControl-11",
+              "formControl-10",
+              "formControl-8",
+              "formControl-7",
+              "formControl-4",
+              "formControl-12",
+              "formControl-6",
+              "formControl-5",
+              "formControl-15",
+              "formControl-16"
+            ],
+            "classes": "d-flex flex-row flex-wrap"
+          },
+          {
+            "type": "button",
+            "id": "button-1",
+            "data": {
+              "title": "Thêm mới",
+              "class": "btn-primary",
+              "type": "",
+              "icon": "ic-plus",
+              "navigationType": "nav",
+              "routerName": "/category/form/create"
+            }
+          },
+          {
+            "type": "button",
+            "id": "button-2",
+            "data": {
+              "title": "Export dữ liệu",
+              "class": "btn-light-blue",
+              "type": "EXPORT",
+              "icon": "ic-upload_file",
+              "navigationType": "export-excel",
+              "routerName": "dcmcore-cases/v1/interactions/export?fileName=Chi tiết tương tác OB",
+              "scopes": [
+                "05_EXPORT"
+              ]
+            }
+          },
+          {
+            "type": "button",
+            "id": "button-3",
+            "data": {
+              "title": "Thêm mới",
+              "class": "btn-primary",
+              "type": "Create",
+              "icon": "ic-plus",
+              "navigationType": "nav",
+              "routerName": "",
+              "scopes": [
+                "01_CREATE"
+              ]
+            }
+          },
+          {
+            "type": "formControl",
+            "id": "formControl-1",
+            "data": {
+              "countMaxLength": true,
+              "value": "",
+              "key": "customerCode",
+              "label": "Mã KH",
+              "required": false,
+              "maxLength": 200,
+              "order": 1,
+              "controlType": "textbox",
+              "type": "single",
+              "placeholder": "Nhập mã KH",
+              "placeHolderSearch": "",
+              "focus": false,
+              "options": [],
+              "layout": "100",
+              "directives": "",
+              "customValidate": [
+                "customMessageError"
+              ],
+              "updateOn": "",
+              "template": "",
+              "reset": false,
+              "paramData": {
+                "isTag": false,
+                "url": "",
+                "preLoad": true,
+                "defaultKeySearch": "",
+                "key": "",
+                "value": "",
+                "typeheadKey": ""
+              },
+              "title": false,
+              "pattern": "",
+              "checked": false,
+              "readOnly": false,
+              "minRow": "2",
+              "clearable": true,
+              "checkBoxKey": "value",
+              "upperCase": false,
+              "requiredMessage": "",
+              "tooltipMessage": "",
+              "customDirectives": ""
+            },
+            "classes": "w-25"
+          },
+          {
+            "type": "formControl",
+            "id": "formControl-2",
+            "data": {
+              "countMaxLength": true,
+              "value": "",
+              "key": "campaignIds",
+              "label": "Tên Campaign/Mã Campaign",
+              "required": false,
+              "maxLength": 200,
+              "order": 1,
+              "controlType": "treeselect",
+              "type": "multiple",
+              "placeholder": "Chọn tên Campaign/Mã Campaign",
+              "placeHolderSearch": "",
+              "focus": false,
+              "options": [],
+              "layout": "100",
+              "directives": "",
+              "customValidate": [
+                "customMessageError"
+              ],
+              "updateOn": "",
+              "template": "",
+              "reset": false,
+              "paramData": {
+                "isTag": false,
+                "url": "dcmcore-campaign/v1/campaigns/search",
+                "preLoad": true,
+                "defaultKeySearch": "",
+                "key": "campaignId",
+                "value": "[\"campaignName\"]",
+                "subValue": "[\"campaignCode\"]",
+                "typeheadKey": "keyword"
+              },
+              "title": false,
+              "pattern": "",
+              "checked": false,
+              "readOnly": false,
+              "minRow": "2",
+              "clearable": true,
+              "checkBoxKey": "value",
+              "upperCase": false,
+              "requiredMessage": "",
+              "tooltipMessage": "",
+              "customDirectives": ""
+            },
+            "classes": "w-25"
+          },
+          {
+            "type": "formControl",
+            "id": "formControl-3",
+            "data": {
+              "countMaxLength": false,
+              "value": "",
+              "key": "createdBy",
+              "label": "Người tạo",
+              "required": false,
+              "order": 1,
+              "controlType": "textbox",
+              "type": "",
+              "placeholder": "Nhập người tạo",
+              "focus": false,
+              "options": [],
+              "layout": "100",
+              "directives": "",
+              "customDirectives": "",
+              "customValidate": [
+                "customMessageError"
+              ],
+              "updateOn": "",
+              "template": "",
+              "reset": false,
+              "paramData": {
+                "isTag": false,
+                "url": "",
+                "preLoad": true,
+                "defaultKeySearch": "",
+                "key": "",
+                "value": [
+                  ""
+                ]
+              },
+              "title": false,
+              "pattern": "",
+              "checked": false,
+              "readOnly": false,
+              "minRow": "2",
+              "clearable": true,
+              "checkBoxKey": "value"
+            },
+            "classes": "w-25"
+          },
+          {
+            "type": "formControl",
+            "id": "formControl-5",
+            "data": {
+              "countMaxLength": false,
+              "value": "",
+              "key": "totalInteraction",
+              "label": "Số lần tương tác",
+              "required": false,
+              "order": 1,
+              "controlType": "treeselect",
+              "type": "multiple",
+              "placeholder": "Chọn số lần tương tác",
+              "placeHolderSearch": "",
+              "focus": false,
+              "options": [
+                {
+                  "key": "0",
+                  "value": "0"
+                },
+                {
+                  "key": "1",
+                  "value": "1"
+                },
+                {
+                  "key": "2",
+                  "value": "2"
+                },
+                {
+                  "key": "3",
+                  "value": "3"
+                },
+                {
+                  "key": "4",
+                  "value": "4"
+                },
+                {
+                  "key": "5",
+                  "value": "5"
+                },
+                {
+                  "key": "gt:5",
+                  "value": ">5"
+                }
+              ],
+              "layout": "100",
+              "directives": "",
+              "customValidate": [
+                "customMessageError"
+              ],
+              "updateOn": "",
+              "template": "",
+              "reset": false,
+              "paramData": {
+                "isTag": false,
+                "url": "",
+                "preLoad": false,
+                "defaultKeySearch": "",
+                "key": "key",
+                "value": "[\"value\"]",
+                "typeheadKey": "",
+                "itemConditionEnable": {
+                  "condition": "and",
+                  "rules": []
+                },
+                "clientFilter": false
+              },
+              "title": false,
+              "pattern": "",
+              "checked": false,
+              "readOnly": false,
+              "minRow": "2",
+              "clearable": true,
+              "checkBoxKey": "value",
+              "upperCase": false,
+              "requiredMessage": "",
+              "tooltipMessage": "",
+              "displayFormat": "DD/MM/YYYY",
+              "customDirectives": "",
+              "isHiddenSearch": true
+            },
+            "classes": "w-25"
+          },
+          {
+            "type": "formControl",
+            "id": "formControl-6",
+            "data": {
+              "countMaxLength": false,
+              "value": "",
+              "key": "lastInteractionResult\t",
+              "label": "Kết quả tương tác gần nhất",
+              "required": false,
+              "order": 1,
+              "controlType": "treeselect",
+              "type": "single",
+              "placeholder": "Chọn kết quả tương tác gần nhất",
+              "placeHolderSearch": "",
+              "focus": false,
+              "options": [],
+              "layout": "100",
+              "directives": "",
+              "customValidate": [
+                "customMessageError"
+              ],
+              "updateOn": "",
+              "template": "",
+              "reset": false,
+              "paramData": {
+                "isTag": false,
+                "url": "",
+                "preLoad": true,
+                "defaultKeySearch": "",
+                "key": "productCode",
+                "value": "[\"productName\"]",
+                "typeheadKey": "productName",
+                "itemConditionEnable": {
+                  "condition": "and",
+                  "rules": [
+                    {
+                      "field": "isMappedWithService",
+                      "operator": "==",
+                      "value": "true"
+                    }
+                  ]
+                }
+              },
+              "title": false,
+              "pattern": "",
+              "checked": false,
+              "readOnly": false,
+              "minRow": "2",
+              "clearable": true,
+              "checkBoxKey": "value",
+              "upperCase": false,
+              "requiredMessage": "",
+              "tooltipMessage": "",
+              "displayFormat": "DD/MM/YYYY",
+              "customDirectives": ""
+            },
+            "classes": "w-25"
+          },
+          {
+            "type": "formControl",
+            "id": "formControl-7",
+            "data": {
+              "countMaxLength": false,
+              "value": "",
+              "key": "customerCardId",
+              "label": "ID thẻ",
+              "required": false,
+              "maxLength": 200,
+              "order": 1,
+              "controlType": "textbox",
+              "type": "single",
+              "placeholder": "Nhập ID thẻ",
+              "placeHolderSearch": "",
+              "focus": false,
+              "options": [],
+              "layout": "100",
+              "directives": "",
+              "customValidate": [
+                "customMessageError"
+              ],
+              "updateOn": "",
+              "template": "",
+              "reset": false,
+              "paramData": {
+                "isTag": false,
+                "url": "dcmcore-administration/v1/department?status=1&isRecursive=true",
+                "preLoad": true,
+                "defaultKeySearch": "",
+                "key": "departmentCode",
+                "value": "[\"departmentName\"]",
+                "typeheadKey": "departmentName",
+                "subValue": ""
+              },
+              "title": false,
+              "pattern": "",
+              "checked": false,
+              "readOnly": false,
+              "minRow": "2",
+              "clearable": true,
+              "checkBoxKey": "value",
+              "upperCase": false,
+              "requiredMessage": "",
+              "tooltipMessage": "",
+              "displayFormat": "DD/MM/YYYY",
+              "customDirectives": ""
+            },
+            "classes": "w-25"
+          },
+          {
+            "type": "formControl",
+            "id": "formControl-4",
+            "data": {
+              "countMaxLength": true,
+              "value": "",
+              "key": "customerTaxCode",
+              "label": "MST",
+              "required": false,
+              "maxLength": 200,
+              "order": 1,
+              "controlType": "textbox",
+              "type": "single",
+              "placeholder": "Nhập MST",
+              "placeHolderSearch": "",
+              "focus": false,
+              "options": [],
+              "layout": "100",
+              "directives": "",
+              "customValidate": [
+                "customMessageError"
+              ],
+              "updateOn": "",
+              "template": "",
+              "reset": false,
+              "paramData": {
+                "isTag": false,
+                "url": "",
+                "preLoad": true,
+                "defaultKeySearch": "",
+                "key": "",
+                "value": "",
+                "typeheadKey": ""
+              },
+              "title": false,
+              "pattern": "",
+              "checked": false,
+              "readOnly": false,
+              "minRow": "2",
+              "clearable": true,
+              "checkBoxKey": "value",
+              "upperCase": false,
+              "requiredMessage": "",
+              "tooltipMessage": "",
+              "customDirectives": ""
+            },
+            "classes": "w-25"
+          },
+          {
+            "type": "formControl",
+            "id": "formControl-8",
+            "data": {
+              "countMaxLength": true,
+              "value": "",
+              "key": "customerEmail",
+              "label": "Email",
+              "required": false,
+              "maxLength": 255,
+              "order": 1,
+              "controlType": "textbox",
+              "type": "single",
+              "placeholder": "Nhập email",
+              "placeHolderSearch": "",
+              "focus": false,
+              "options": [],
+              "layout": "100",
+              "directives": "",
+              "customValidate": [
+                "customMessageError"
+              ],
+              "updateOn": "",
+              "template": "",
+              "reset": false,
+              "paramData": {
+                "isTag": false,
+                "url": "dcmcore-administration/v1/employee?roles=ADMIN,CV_OB,KS_OB,QTHT_OB,OS_OB",
+                "preLoad": true,
+                "defaultKeySearch": "",
+                "key": "adUser",
+                "value": "[\"fullName\"]",
+                "typeheadKey": "keyword",
+                "clientFilter": false,
+                "subValue": "[\"adUser\"]"
+              },
+              "title": false,
+              "pattern": "",
+              "checked": false,
+              "readOnly": false,
+              "minRow": "2",
+              "clearable": true,
+              "checkBoxKey": "value",
+              "upperCase": false,
+              "requiredMessage": "",
+              "tooltipMessage": "",
+              "displayFormat": "DD/MM/YYYY",
+              "customDirectives": ""
+            },
+            "classes": "w-25"
+          },
+          {
+            "type": "formControl",
+            "id": "formControl-9",
+            "data": {
+              "countMaxLength": true,
+              "value": "",
+              "key": "agentEmployeeIds",
+              "label": "Nhân sự",
+              "required": false,
+              "maxLength": 200,
+              "order": 1,
+              "controlType": "treeselect",
+              "type": "multiple",
+              "placeholder": "Chọn nhân sự",
+              "placeHolderSearch": "",
+              "focus": false,
+              "options": [],
+              "layout": "100",
+              "directives": "",
+              "customValidate": [
+                "customMessageError"
+              ],
+              "updateOn": "",
+              "template": "",
+              "reset": false,
+              "paramData": {
+                "isTag": false,
+                "url": "dcmcore-administration/v1/employee?isActiveDCMS=1",
+                "preLoad": true,
+                "defaultKeySearch": "",
+                "key": "employeeId",
+                "value": "[\"fullName\"]",
+                "typeheadKey": "keyword",
+                "subValue": "[\"adUser\"]"
+              },
+              "title": false,
+              "pattern": "",
+              "checked": false,
+              "readOnly": false,
+              "minRow": "2",
+              "clearable": true,
+              "checkBoxKey": "value",
+              "upperCase": false,
+              "requiredMessage": "",
+              "tooltipMessage": "",
+              "displayFormat": "DD/MM/YYYY HH:mm",
+              "customDirectives": "",
+              "timePicker": true,
+              "showDateRange": true
+            },
+            "classes": "w-25"
+          },
+          {
+            "type": "formControl",
+            "id": "formControl-10",
+            "data": {
+              "countMaxLength": true,
+              "value": "",
+              "key": "customerIdentityNumber",
+              "label": "GTTT",
+              "required": false,
+              "maxLength": 200,
+              "order": 1,
+              "controlType": "textbox",
+              "type": "single",
+              "placeholder": "Nhập GTTT",
+              "placeHolderSearch": "",
+              "focus": false,
+              "options": [],
+              "layout": "100",
+              "directives": "",
+              "customValidate": [
+                "customMessageError"
+              ],
+              "updateOn": "",
+              "template": "",
+              "reset": false,
+              "paramData": {
+                "isTag": false,
+                "url": "",
+                "preLoad": true,
+                "defaultKeySearch": "",
+                "key": "",
+                "value": "",
+                "typeheadKey": ""
+              },
+              "title": false,
+              "pattern": "",
+              "checked": false,
+              "readOnly": false,
+              "minRow": "2",
+              "clearable": true,
+              "checkBoxKey": "value",
+              "upperCase": false,
+              "requiredMessage": "",
+              "tooltipMessage": "",
+              "customDirectives": ""
+            },
+            "classes": "w-25"
+          },
+          {
+            "type": "formControl",
+            "id": "formControl-11",
+            "data": {
+              "countMaxLength": false,
+              "value": "",
+              "key": "customerPhoneNumber",
+              "label": "SĐT",
+              "required": false,
+              "maxLength": 15,
+              "order": 1,
+              "controlType": "textbox",
+              "type": "number",
+              "placeholder": "Nhập SĐT",
+              "placeHolderSearch": "",
+              "focus": false,
+              "options": [],
+              "layout": "100",
+              "directives": "number",
+              "customValidate": [
+                "customMessageError"
+              ],
+              "updateOn": "",
+              "template": "",
+              "reset": false,
+              "paramData": {
+                "isTag": false,
+                "url": "",
+                "preLoad": true,
+                "defaultKeySearch": "",
+                "key": "",
+                "value": "",
+                "typeheadKey": ""
+              },
+              "title": false,
+              "pattern": "",
+              "checked": false,
+              "readOnly": false,
+              "minRow": "2",
+              "clearable": true,
+              "checkBoxKey": "value",
+              "upperCase": false,
+              "requiredMessage": "",
+              "tooltipMessage": "",
+              "customDirectives": "",
+              "displayFormat": "DD/MM/YYYY"
+            },
+            "classes": "w-25"
+          },
+          {
+            "type": "formControl",
+            "id": "formControl-12",
+            "data": {
+              "countMaxLength": false,
+              "value": "",
+              "key": "profileStatus",
+              "label": "Tình trạng",
+              "required": false,
+              "order": 1,
+              "controlType": "ngselect",
+              "type": "single",
+              "placeholder": "Tất cả",
+              "placeHolderSearch": "",
+              "focus": false,
+              "options": [
+                {
+                  "key": "1",
+                  "value": "Chưa phân giao"
+                },
+                {
+                  "key": "2",
+                  "value": "Đã phân giao"
+                }
+              ],
+              "layout": "100",
+              "directives": "",
+              "customValidate": [
+                "customMessageError"
+              ],
+              "updateOn": "",
+              "template": "",
+              "reset": false,
+              "paramData": {
+                "isTag": false,
+                "url": "",
+                "preLoad": false,
+                "defaultKeySearch": "",
+                "key": "",
+                "value": "",
+                "typeheadKey": ""
+              },
+              "title": false,
+              "pattern": "",
+              "checked": false,
+              "readOnly": false,
+              "minRow": "2",
+              "clearable": true,
+              "checkBoxKey": "value",
+              "upperCase": false,
+              "requiredMessage": "",
+              "tooltipMessage": "",
+              "customDirectives": "",
+              "defaultValue": "2"
+            },
+            "classes": "w-25"
+          },
+          {
+            "type": "formControl",
+            "id": "formControl-13",
+            "data": {
+              "countMaxLength": false,
+              "value": "",
+              "key": "profileStatus",
+              "label": "Kênh tương tác",
+              "required": false,
+              "order": 1,
+              "controlType": "ngselect",
+              "type": "single",
+              "placeholder": "Tất cả",
+              "focus": false,
+              "options": [
+                {
+                  "key": "0",
+                  "value": "Đã phân giao"
+                },
+                {
+                  "key": "1",
+                  "value": "Chưa phân giao"
+                }
+              ],
+              "layout": "100",
+              "directives": "",
+              "customDirectives": "",
+              "customValidate": [
+                "customMessageError"
+              ],
+              "updateOn": "",
+              "template": "",
+              "reset": false,
+              "paramData": {
+                "isTag": false,
+                "url": "",
+                "preLoad": true,
+                "defaultKeySearch": "",
+                "key": "",
+                "value": "",
+                "typeheadKey": ""
+              },
+              "title": false,
+              "pattern": "",
+              "checked": false,
+              "readOnly": false,
+              "minRow": "2",
+              "clearable": false,
+              "checkBoxKey": "value"
+            },
+            "classes": "w-25"
+          },
+          {
+            "type": "table",
+            "id": "table-1",
+            "data": {
+              "quickSearchFields": [
+                {
+                  "key": "formName",
+                  "text": "Tên mẫu"
+                },
+                {
+                  "key": "formCode",
+                  "text": "Mã mẫu"
+                }
+              ],
+              "apiList": "dcmcore-campaign/v1/profile/total-profile",
+              "tableTitle": "mẫu nhập liệu",
+              "apiCreate": "",
+              "displayedColumns": [
+                {
+                  "name": "",
+                  "field": "select",
+                  "path": "profileContentId",
+                  "show": true,
+                  "type": "checkbox-selection-all",
+                  "maxLength": ""
+                },
+                {
+                  "name": "STT",
+                  "field": "no",
+                  "path": "no",
+                  "show": true
+                },
+                {
+                  "name": "Tên khách hàng",
+                  "field": "customerName",
+                  "path": "customerName",
+                  "show": true,
+                  "type": "link",
+                  "offContentMenu": true
+                },
+                {
+                  "name": "SĐT",
+                  "field": "customerPhoneNumber",
+                  "path": "customerPhoneNumber",
+                  "show": true,
+                  "type": "textbox",
+                  "isQuickSearch": true,
+                  "isAdvancedSearch": true,
+                  "maxLength": "60"
+                },
+                {
+                  "name": "Tên Campaign",
+                  "field": "campaignData.campaignName",
+                  "path": "campaignData.campaignName",
+                  "show": true,
+                  "type": "textbox"
+                },
+                {
+                  "name": "Ngày kết thúc",
+                  "field": "campaignData.endDate",
+                  "path": "campaignData.endDate",
+                  "show": true,
+                  "type": "date",
+                  "enumText": [
+                    {
+                      "key": "0",
+                      "text": "Ngừng sử dụng",
+                      "class": "app-status-reject"
+                    },
+                    {
+                      "key": "1",
+                      "text": "Đang sử dụng",
+                      "class": "app-status-approved"
+                    }
+                  ]
+                },
+                {
+                  "name": "Ngày phân giao",
+                  "field": "assignedDate",
+                  "path": "assignedDate",
+                  "show": true,
+                  "type": "textbox"
+                },
+                {
+                  "name": "Số lần gọi",
+                  "field": "numberOfCalls",
+                  "path": "numberOfCalls",
+                  "show": true,
+                  "type": "decimal",
+                  "maxLength": "36",
+                  "mapField": "teamName"
+                },
+                {
+                  "name": "Thời gian gọi gần nhất",
+                  "field": "lastCallDate",
+                  "path": "lastCallDate",
+                  "show": true,
+                  "type": "datetime",
+                  "datetimeFormat": "DD/MM/YYYY HH:mm"
+                },
+                {
+                  "name": "Kết quả tương tác gần nhất",
+                  "field": "lastInteractionResult",
+                  "path": "lastInteractionResult",
+                  "show": true
+                },
+                {
+                  "name": "Nhân sự",
+                  "field": "assignedAgent",
+                  "path": "assignedAgent",
+                  "show": true
+                }
+              ],
+              "pageSize": 10,
+              "buttonLists": [
+                {
+                  "title": "Sửa",
+                  "type": "EDIT",
+                  "class": "",
+                  "icon": "ic-new-edit fc-primary",
+                  "navigationType": "emit"
+                }
+              ],
+              "columnActionLists": [
+                {
+                  "title": "Chỉnh sửa",
+                  "type": "EDIT",
+                  "class": "",
+                  "icon": "ic-new-edit",
+                  "routerName": "/request/interact/edit/:interactionId",
+                  "scope": "02_EDIT",
+                  "navigationType": "nav"
+                }
+              ],
+              "apiDelete": "dcmcore-campaign/v1/profile/total-profile",
+              "isTreeData": false,
+              "disableAutoCallOnChange": true,
+              "apiListMethod": "GET",
+              "checkBoxOnePage": true,
+              "maxCheckbox": "500"
+            },
+            "classes": ""
+          },
+          {
+            "id": "text",
+            "type": "text",
+            "content": "Danh sách tương tác"
+          },
+          {
+            "type": "formControl",
+            "id": "formControl-14",
+            "data": {
+              "countMaxLength": false,
+              "value": "",
+              "key": "channel",
+              "label": "Kênh tương tác",
+              "required": false,
+              "order": 1,
+              "controlType": "treeselect",
+              "type": "single",
+              "placeholder": "Tất cả",
+              "focus": false,
+              "options": [
+                {
+                  "key": "0",
+                  "value": "Callout"
+                }
+              ],
+              "layout": "100",
+              "directives": "",
+              "customDirectives": "",
+              "customValidate": [
+                "customMessageError"
+              ],
+              "updateOn": "",
+              "template": "",
+              "reset": false,
+              "paramData": {
+                "isTag": false,
+                "url": "",
+                "preLoad": true,
+                "defaultKeySearch": "",
+                "key": "key",
+                "value": "[\"value\"]",
+                "typeheadKey": ""
+              },
+              "title": false,
+              "pattern": "",
+              "checked": false,
+              "readOnly": false,
+              "minRow": "2",
+              "clearable": true,
+              "checkBoxKey": "value",
+              "upperCase": false,
+              "requiredMessage": "",
+              "tooltipMessage": "",
+              "displayFormat": "DD/MM/YYYY"
+            },
+            "classes": "w-25"
+          },
+          {
+            "type": "formControl",
+            "id": "formControl-15",
+            "data": {
+              "countMaxLength": false,
+              "value": "",
+              "key": "fromDate-toDate",
+              "label": "Thời gian gọi gần nhất",
+              "required": false,
+              "order": 1,
+              "controlType": "daterange",
+              "type": "single",
+              "placeholder": "Chọn thời gian gọi gần nhất",
+              "placeHolderSearch": "",
+              "focus": false,
+              "options": [],
+              "layout": "100",
+              "directives": "",
+              "customValidate": [
+                "customMessageError"
+              ],
+              "updateOn": "",
+              "template": "",
+              "reset": false,
+              "paramData": {
+                "isTag": false,
+                "url": "dcmcore-services-management/v1/business-category/used-tree",
+                "preLoad": true,
+                "defaultKeySearch": "",
+                "key": "businessCode",
+                "value": "[\"businessName\"]",
+                "typeheadKey": "businessName",
+                "itemConditionEnable": {
+                  "condition": "and",
+                  "rules": [
+                    {
+                      "field": "isMappedWithService",
+                      "operator": "==",
+                      "value": "true"
+                    }
+                  ]
+                }
+              },
+              "title": false,
+              "pattern": "",
+              "checked": false,
+              "readOnly": false,
+              "minRow": "2",
+              "clearable": true,
+              "checkBoxKey": "value",
+              "upperCase": false,
+              "requiredMessage": "",
+              "tooltipMessage": "",
+              "displayFormat": "DD/MM/YYYY HH:mm",
+              "customDirectives": "",
+              "showClearButton": true,
+              "timePicker": true
+            },
+            "classes": "w-25"
+          },
+          {
+            "type": "formControl",
+            "id": "formControl-16",
+            "data": {
+              "countMaxLength": false,
+              "value": "",
+              "key": "campaignStatus",
+              "label": "Trạng thái campaign",
+              "required": false,
+              "order": 1,
+              "controlType": "ngselect",
+              "type": "single",
+              "placeholder": "Tất cả",
+              "placeHolderSearch": "",
+              "focus": false,
+              "options": [
+                {
+                  "key": "1",
+                  "value": "Triển khai"
+                },
+                {
+                  "key": "2",
+                  "value": "Kết thúc"
+                }
+              ],
+              "layout": "100",
+              "directives": "",
+              "customValidate": [
+                "customMessageError"
+              ],
+              "updateOn": "",
+              "template": "",
+              "reset": false,
+              "paramData": {
+                "isTag": false,
+                "url": "",
+                "preLoad": false,
+                "defaultKeySearch": "",
+                "key": "",
+                "value": "",
+                "typeheadKey": ""
+              },
+              "title": false,
+              "pattern": "",
+              "checked": false,
+              "readOnly": false,
+              "minRow": "2",
+              "clearable": true,
+              "checkBoxKey": "value",
+              "upperCase": false,
+              "requiredMessage": "",
+              "tooltipMessage": "",
+              "customDirectives": "",
+              "defaultValue": "1"
+            },
+            "classes": "w-25"
+          }
+        ]
+      }
+    }
+  }
+}
